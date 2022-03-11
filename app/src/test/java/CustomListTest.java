@@ -39,4 +39,11 @@ public class CustomListTest {
         list.delete(city);
         assertEquals(0,list.getCount());
     }
+
+    @Test
+    public void countCityTest(){
+        City city = new City("Halifax", "NS");
+        list.addCity(city);
+        assertEquals(1,list.countCities());
+    }
 }
